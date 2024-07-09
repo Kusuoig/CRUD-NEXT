@@ -7,7 +7,7 @@ return (
  <table className="min-w-full table-auto ">
     <thead >
         <tr className="bg-slate-800 ">
-            <th className="px-16 py-2 ">
+            <th className="px-16  py-2 ">
                 <span className="text-gray-400">Producto</span>
             </th>
             <th className="px-16 py-2">
@@ -31,7 +31,7 @@ return (
     <tr>
         <td className=" border-l border-l-full px-16 py-2 flex flex-row items-center "> 
             <img src='#' alt=''/>
-            <span className="text-center  ml-2 font-semibold">COCA</span>
+            <span className="text-center items-center ml-2 font-semibold">COCA</span>
         </td>
         <td className="px-16 py-2 text-center items-center"> 
             <span>2</span>
@@ -43,11 +43,11 @@ return (
             <span> 06/05/2024</span>
         </td>
         <td className="px-16 py-2  text-center items-center"> 
-            <button className="cursor"></button><span className="bg-green-600 py-1 px-5 rounded-full text-white ">Activo</span>
+            <button title="status" name="estado" className="cursor"></button><span className="bg-green-600 py-1 px-5 rounded-full text-white ">Activo</span>
         </td>
         <td className="px-16 py-2 flex justify-around "> 
-            <button className="cursor"><FiEdit color="green" size={23}></FiEdit></button>
-            <button className="cursor"><FiTrash2 color="red" size={23}></FiTrash2></button>
+            <button title="edit" name="edit" className="cursor"><FiEdit color="green" size={23}></FiEdit></button>
+            <button title="delete" name="delete" className="cursor"><FiTrash2 color="red" size={23}></FiTrash2></button>
         </td>
     </tr>
     </tbody>
