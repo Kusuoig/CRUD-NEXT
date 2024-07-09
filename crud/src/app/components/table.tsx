@@ -5,9 +5,9 @@ export default function Table (){
 return (
 
  <table className="min-w-full table-auto ">
-    <thead>
-        <tr className="bg-slate-800">
-            <th className="px-16 py-2">
+    <thead >
+        <tr className="bg-slate-800 ">
+            <th className="px-16 py-2 ">
                 <span className="text-gray-400">Producto</span>
             </th>
             <th className="px-16 py-2">
@@ -29,7 +29,7 @@ return (
     </thead>
     <tbody className="bg-slate-200">
     <tr>
-        <td className="px-16 py-2 flex flex-row items-center"> 
+        <td className=" border-l border-l-full px-16 py-2 flex flex-row items-center "> 
             <img src='#' alt=''/>
             <span className="text-center  ml-2 font-semibold">COCA</span>
         </td>

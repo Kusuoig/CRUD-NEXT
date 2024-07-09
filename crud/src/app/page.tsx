@@ -7,7 +7,7 @@ import Form from './components/form';
 export default function Home() {
   return (
     <section>
-       <main className='py-5'> 
+       <main className='py-5 px-5'> 
       <h1 className='text-xl md:text-5xl text-center font-bold py-15'>OLA ODALISSS PRECIOSA, YA VAMOS A VERNOS TE QUIERO BESILLOS</h1>
 
       <div className='container mx-auto flex justify-between py-5  border-b'>
