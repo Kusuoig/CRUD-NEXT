@@ -1,6 +1,6 @@
 'use client';
 import { useReducer } from "react";
-import { FiPlus } from "react-icons/fi";
+import { BiBrush } from "react-icons/bi";
 import { GrFormFilter } from "react-icons/gr";
 import Succes from "./succes";
 import Bug from "./bug";
@@ -18,7 +18,7 @@ const formReducer = (state:FormState,event:FormEvent)=>{
  
 }
 }
-export default function AddUserForm (){
+export default function UpdateUserForm (){
 
 const [formData,setFormData] = useReducer(formReducer,{});
 
@@ -63,8 +63,8 @@ return(
             </label>
     </div>
     </div>
-    <button className=" onChange={setFormData} flex justify-center text-md w-2/6 bg-teal-500 text-white px-4 py-2 border rounded-md hover:bg-white hover:border-teal-500 hover:text-teal-500 ">
-    Agregar <span className="py-1 px-1"><FiPlus size={18}></FiPlus></span>
+    <button className=" onChange={setFormData} flex justify-center text-md w-2/6 bg-teal-500 text-white px-4 py-2 border rounded-md hover:bg-white hover:border-pink-700 hover:text-pink-700 ">
+    Update <span className="py-1 px-1"><BiBrush size={18}></BiBrush></span>
     </button>
 </form>
 

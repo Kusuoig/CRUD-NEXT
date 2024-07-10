@@ -1,5 +1,7 @@
 import { FiPlusSquare } from "react-icons/fi";
 import { FiTrash2,FiEdit } from "react-icons/fi";
+import data from "../database/data.json";
+
 
 export default function Table (){
 return (
@@ -16,6 +18,7 @@ return (
             <th className="px-16 py-2">
                 <span className="text-gray-400">Precio</span>
             </th>
+            
             <th className="px-16 py-2">
                 <span className="text-gray-400">Fecha de importe</span>
             </th>
@@ -28,29 +31,62 @@ return (
         </tr>
     </thead>
     <tbody className="bg-slate-200">
-    <tr>
+        {
+           data.map((obj,i)=> <Tr{...obj}key={i}/> ) 
+        }
+
+
+    </tbody>
+ </table>
+);
+}
+
+
+interface Product {
+    id: number;
+    name: string;
+    cantidad: number;
+    precio: number;
+    date: string;
+    status: string;
+  }
+  
+  interface TrProps {
+    id: number;
+    name: string;
+    cantidad: number;
+    precio: number;
+    date: string;
+    status: string;
+  }
+  
+  const Tr: React.FC<TrProps> = ({ id, name, cantidad, precio, date, status }) =>  {
+
+    return(
+<tr>
         <td className=" border-l border-l-full px-16 py-2 flex flex-row items-center "> 
             <img src='#' alt=''/>
-            <span className="text-center items-center ml-2 font-semibold">COCA</span>
+            <span className="text-center items-center ml-2 font-semibold">{name || "Desconocido"}</span>
         </td>
         <td className="px-16 py-2 text-center items-center"> 
-            <span>2</span>
+            <span>{cantidad || "Desconocido"}</span>
         </td>
         <td className="px-16 py-2 text-center items-center"> 
-            <span >$25</span>
+            <span>${precio || "Desconocido"}</span>
         </td>
         <td className="px-16 py-2 text-center items-center"> 
-            <span> 06/05/2024</span>
+            <span>{date || "Desconocido"}</span>
         </td>
         <td className="px-16 py-2  text-center items-center"> 
-            <button title="status" name="estado" className="cursor"></button><span className="bg-green-600 py-1 px-5 rounded-full text-white ">Activo</span>
+            <button title="status" name="estado" className="cursor"></button><span className="bg-green-600 py-1 px-5 rounded-full text-white ">
+                {status}</span>
         </td>
         <td className="px-16 py-2 flex justify-around "> 
             <button title="edit" name="edit" className="cursor"><FiEdit color="green" size={23}></FiEdit></button>
             <button title="delete" name="delete" className="cursor"><FiTrash2 color="red" size={23}></FiTrash2></button>
         </td>
     </tr>
-    </tbody>
- </table>
-);
+    );
 }
+
+
