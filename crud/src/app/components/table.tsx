@@ -78,9 +78,10 @@ interface Product {
             <span>{date || "Desconocido"}</span>
         </td>
         <td className="px-16 py-2  text-center items-center"> 
-            <button title="status" name="estado" className="cursor"></button><span className="bg-green-600 py-1 px-5 rounded-full text-white ">
+            <button title="status" name="estado" className="cursor"></button><span className={`cursor ${status === "Inactive" ? "bg-red-600 py-1 px-5 rounded-full text-white " : "bg-green-600 py-1 px-5 rounded-full text-white"}`}>
                 {status}</span>
         </td>
+
         <td className="px-16 py-2 flex justify-around "> 
             <button title="edit" name="edit" className="cursor"><FiEdit color="green" size={23}></FiEdit></button>
             <button title="delete" name="delete" className="cursor"><FiTrash2 color="red" size={23}></FiTrash2></button>
