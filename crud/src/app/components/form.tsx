@@ -7,8 +7,6 @@ export default function Form (){
 
 
 return(
-
-    
             <UpdateUserForm></UpdateUserForm>
  );
 }
