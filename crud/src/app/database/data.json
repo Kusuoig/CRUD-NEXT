@@ -1,13 +1,5 @@
 [
   {
-    "id": 1,
-    "name": "Coca",
-    "cantidad": 2,
-    "precio": 25,
-    "date": "2024-06-08",
-    "status": "Active"
-  },
-  {
     "id": 2,
     "name": "Pepsi",
     "cantidad": 3,
@@ -54,5 +46,13 @@
     "precio": 20,
     "date": "2024-07-16",
     "status": "Inactive"
+  },
+  {
+    "id": 8,
+    "name": "Leche",
+    "cantidad": 10,
+    "precio": 20,
+    "date": "2024-07-16",
+    "status": "Active"
   }
 ]

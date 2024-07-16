@@ -18,7 +18,7 @@ const formReducer = (state: FormState, event: React.ChangeEvent<HTMLInputElement
 
 const handleDelete = async (id: number) => {
     try {
-        const response = await fetch('/api/deleteProduct', {
+        const response = await fetch('/api/addProduct', {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json',
