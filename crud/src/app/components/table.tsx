@@ -1,8 +1,42 @@
 import { FiPlusSquare } from "react-icons/fi";
 import { FiTrash2,FiEdit } from "react-icons/fi";
+import { useReducer, useState, useEffect } from "react";
+
 import data from "../database/data.json";
 
 
+interface FormState {
+    [key: string]: string;
+}
+
+const formReducer = (state: FormState, event: React.ChangeEvent<HTMLInputElement>) => {
+    return {
+        ...state,
+        [event.target.name]: event.target.value
+    };
+}
+
+const handleDelete = async (id: number) => {
+    try {
+        const response = await fetch('/api/deleteProduct', {
+            method: 'DELETE',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ id }),
+        });
+
+        if (response.ok) {
+            console.log('Elemento eliminado correctamente');
+            // Actualizar el estado local eliminando el elemento
+        } else {
+            console.error('Error al eliminar el elemento');
+        }
+    } catch (error) {
+        console.error('Error al enviar la solicitud de eliminación:', error);
+
+    }
+}
 export default function Table (){
 return (
 
@@ -84,7 +118,7 @@ interface Product {
 
         <td className="px-16 py-2 flex justify-around "> 
             <button title="edit" name="edit" className="cursor"><FiEdit color="green" size={23}></FiEdit></button>
-            <button title="delete" name="delete" className="cursor"><FiTrash2 color="red" size={23}></FiTrash2></button>
+            <button  title="delete" onClick={() => handleDelete(id)} name="delete" className="cursor"><FiTrash2 color="red" size={23}></FiTrash2></button>
         </td>
     </tr>
     );
