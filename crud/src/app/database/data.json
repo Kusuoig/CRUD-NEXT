@@ -46,13 +46,5 @@
     "precio": 20,
     "date": "2024-07-16",
     "status": "Inactive"
-  },
-  {
-    "id": 8,
-    "name": "Leche",
-    "cantidad": 10,
-    "precio": 20,
-    "date": "2024-07-16",
-    "status": "Active"
   }
 ]
