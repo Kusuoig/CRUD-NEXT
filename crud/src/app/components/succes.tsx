@@ -1,4 +1,4 @@
-import { FiCheck } from "react-icons/fi";
+/*/import { FiCheck } from "react-icons/fi";
 
 
 
@@ -13,4 +13,4 @@ return(
     </div>
 );
     
-}
+}/*/

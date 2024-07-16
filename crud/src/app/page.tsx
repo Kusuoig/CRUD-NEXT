@@ -27,14 +27,14 @@ export default function Home() {
          </button>
          </div>
           
-          
+          S
       </div>
       {/*form colapasble*/}
 
-      
+      <div className="px-6 py-2 mx-10">
             {visible? <Form></Form> : <></> }
           
-
+            </div>
 
       {/*table*/}
       <div className='container mx-auto flex'>

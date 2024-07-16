@@ -2,7 +2,7 @@
 import { useReducer } from "react";
 import { BiBrush } from "react-icons/bi";
 import { GrFormFilter } from "react-icons/gr";
-import Succes from "./succes";
+/*import Succes from "./succes";*/
 import Bug from "./bug";
 
 interface FormEvent {
@@ -28,7 +28,7 @@ const handleSubmit = (event: React.FormEvent) => {
 console.log(formData);
 }
 
-if(Object.keys(formData).length>0) return <Succes ></Succes>
+
 
 return(
 
@@ -63,7 +63,7 @@ return(
             </label>
     </div>
     </div>
-    <button className=" onChange={setFormData} flex justify-center text-md w-2/6 bg-teal-500 text-white px-4 py-2 border rounded-md hover:bg-white hover:border-pink-700 hover:text-pink-700 ">
+    <button type="submit"  name="agregar" className=" flex justify-center text-md w-2/6 bg-teal-500 text-white px-4 py-2 border rounded-md hover:bg-white hover:border-pink-700 hover:text-pink-700 ">
     Update <span className="py-1 px-1"><BiBrush size={18}></BiBrush></span>
     </button>
 </form>

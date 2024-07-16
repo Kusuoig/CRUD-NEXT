@@ -33,9 +33,17 @@
             "name": "ChocoMio",
             "cantidad": 25,
             "precio": 3,
-            "tprecio": "precio*2",
             "date":"2024-07-08",
             "status":"Active"    
+        },
+
+        {
+            "id": 5,
+            "name": "Telefono",
+            "cantidad": 2000,
+            "precio": 3,
+            "date":"2024-07-08",
+            "status":"Active"   
         }
    
     
