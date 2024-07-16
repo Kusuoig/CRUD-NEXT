@@ -1,50 +1,58 @@
 [
-    {
-        "id": 1,
-        "name": "Coca",
-        "cantidad": 2,
-        "precio": 25,
-        "date":"2024-06-08",
-        "status":"Active"
-
-    },
-
-    {
-        "id": 2,
-        "name": "Pepsi",
-        "cantidad": 3,
-        "precio": 30,
-        "date":"2024-06-08",
-        "status":"Active"
-
-    },
-
-    {
-        "id": 3,
-        "name": "Cafe",
-        "cantidad": 10,
-        "precio": 23,
-        "date":"2024-06-08",
-        "status":"Inactive"
-
-    },
-    {
-        "id": 4,
-            "name": "ChocoMio",
-            "cantidad": 25,
-            "precio": 3,
-            "date":"2024-07-08",
-            "status":"Active"    
-        },
-
-        {
-            "id": 5,
-            "name": "Telefono",
-            "cantidad": 2000,
-            "precio": 3,
-            "date":"2024-07-08",
-            "status":"Active"   
-        }
-   
-    
+  {
+    "id": 1,
+    "name": "Coca",
+    "cantidad": 2,
+    "precio": 25,
+    "date": "2024-06-08",
+    "status": "Active"
+  },
+  {
+    "id": 2,
+    "name": "Pepsi",
+    "cantidad": 3,
+    "precio": 30,
+    "date": "2024-06-08",
+    "status": "Active"
+  },
+  {
+    "id": 3,
+    "name": "Cafe",
+    "cantidad": 10,
+    "precio": 23,
+    "date": "2024-06-08",
+    "status": "Inactive"
+  },
+  {
+    "id": 4,
+    "name": "ChocoMio",
+    "cantidad": 25,
+    "precio": 3,
+    "date": "2024-07-08",
+    "status": "Active"
+  },
+  {
+    "id": 5,
+    "name": "Telefono",
+    "cantidad": 2000,
+    "precio": 3,
+    "date": "2024-07-08",
+    "status": "Active"
+  },
+  {
+    "id": 6,
+    "name": "Chile",
+    "cantidad": 10,
+    "precio": 5,
+    "date": "2024-07-16",
+    "status": "Active"
+  },
+  {
+    "id": 7,
+    "name": "Sabritas",
+    "cantidad": 5,
+    "precio": 20,
+    "date": "2024-07-16",
+    "status": "Inactive"
+  }
 ]
